@@ -1,0 +1,5 @@
+C:\Dropbox\kbproject\common\obj\Debug\ResolveAssemblyReference.cache
+C:\Dropbox\kbproject\common\bin\Debug\CommonClasses.dll
+C:\Dropbox\kbproject\common\bin\Debug\CommonClasses.pdb
+C:\Dropbox\kbproject\common\obj\Debug\CommonClasses.dll
+C:\Dropbox\kbproject\common\obj\Debug\CommonClasses.pdb

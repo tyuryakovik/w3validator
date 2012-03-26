@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Common</name>
+    </assembly>
+    <members>
+        <member name="T:KBProject.Common.LogResources.CLCStringAppender">
+            <summary>
+            summary
+            </summary>
+        </member>
+        <member name="T:KBProject.Common.SkipFieldAttribute">
+            <summary>
+            Attribute to skip field copying.</summary>
+            <remarks>
+            Set this attribute for a field that should  
+            not be copied to clone object and 
+            retain default value instead. Default value
+            is the one that is set by parameterless constructor.</remarks>
+        </member>
+        <member name="T:KBProject.Common.Prototype">
+             <summary>
+             Inherit this class to have DeepCopy functionality needed
+             for Prototype design pattern.</summary>
+             <remarks>
+             DeepCopy clones the class and all of its substructure 
+             consisting of Prototype subclasses. 
+             Circular references and interconnecting tree structure 
+             are supported by this method.
+             Array fields (Prototype[]) are supported.
+             To support other type of containers, override ExtraCopy
+             in your subclass.
+             All fields that are not inherited from Prototype will be
+             copied as-is. I.e. reference fields will be pointing at 
+             the same objects as the source object fields.
+            </remarks>
+        </member>
+        <member name="F:KBProject.Common.Prototype.copyIndex">
+            <summary>
+            Counts DeepCopy operations. </summary>
+        </member>
+        <member name="F:KBProject.Common.Prototype.currentCopy">
+            <summary>
+            Used to remember created copy reference</summary>
+            <remarks>
+            When copy operation encounters the object that is
+            already copied on previous iterations, it uses this
+            reference, instead of creating new object. As a result,
+            copied structure matches exactly.</remarks>
+        </member>
+        <member name="F:KBProject.Common.Prototype.currentIndex">
+            <summary>
+            Indicates copy operation when currentCopy was created.</summary>
+        </member>
+        <member name="M:KBProject.Common.Prototype.#ctor">
+            <summary>
+            Parameterless empty constructor
+            </summary>
+        </member>
+        <member name="M:KBProject.Common.Prototype.DeepCopy">
+            <summary>
+            Call this to make a deep copy of the objects structure.</summary>
+            <returns>
+            Returns copied object structure. User is responsible for casting.</returns>
+        </member>
+        <member name="M:KBProject.Common.Prototype.PerformCopy(System.UInt64)">
+            <summary>
+            Recursively copies objects.</summary>
+            <param name="index"> 
+            index of copy operation in progress</param>
+            <returns>
+            Returns copied object.</returns>
+        </member>
+        <member name="M:KBProject.Common.Prototype.ArrayCopy(System.Object)">
+            <summary>
+            Does a recursive PerformCopy call for Prototype[] array fields.</summary>
+            <param name="value"> 
+            Value of source object field.</param>
+            <returns>
+            If input value is Prototype[] array, returns deep Copy of it. 
+            Otherwise returns input value unchanged.</returns>
+        </member>
+        <member name="M:KBProject.Common.Prototype.ProtoCopy(System.Object)">
+            <summary>
+            Does a recursive PerformCopy call for Prototype fields.</summary>
+            <param name="value"> 
+            Value of source object field.</param>
+            <returns>
+            If input value is Prototype, returns deep Copy of it. 
+            Otherwise returns input value unchanged.</returns>
+        </member>
+        <member name="M:KBProject.Common.Prototype.ExtraCopy(System.Object)">
+             <summary>
+             Override this method to support additional container types.</summary>
+             <remarks>
+             Example:
+                 public class subProto : Prototype
+                 {
+                   List%subProto% branches = new List%subProto%();
+            
+                   protected override void ExtraCopy(object copy)
+                   {
+                     subProto subcopy = Copy as subProto;
+                     subcopy.branches = new List%subProto%();
+                     foreach (subProto item in branches)
+                       if (item != null)
+                         subcopy.branches.Add(ProtoCopy(item) as subProto);
+                   }
+                 } 
+            </remarks>
+             <param name="copy"> 
+             Copied object.</param>
+        </member>
+    </members>
+</doc>

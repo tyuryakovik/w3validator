@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5ADFB150-5AAD-4A62-A4BE-323ED782962A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KBProject.Common</RootNamespace>
+    <AssemblyName>Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>Common.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>.\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>Common.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants.cs" />
+    <Compile Include="DoubleCheckedLock.cs" />
+    <Compile Include="GlobalVars.cs" />
+    <Compile Include="Indexed.cs" />
+    <Compile Include="LogResources\CLCStackTraceAppender.cs" />
+    <Compile Include="SettingsAccess.cs" />
+    <Compile Include="XmlFacade.cs" />
+    <Compile Include="LogResources\LogConstructorFactory.cs" />
+    <Compile Include="LogResources\CLCDateTimeAppender.cs" />
+    <Compile Include="LogResources\CLCExceptionAppender.cs" />
+    <Compile Include="LogResources\CLCIdAppender.cs" />
+    <Compile Include="LogResources\CLCLevelAppender.cs" />
+    <Compile Include="LogResources\CLCMessageAppender.cs" />
+    <Compile Include="LogResources\CLCModuleAppender.cs" />
+    <Compile Include="LogResources\CLCStringAppender.cs" />
+    <Compile Include="LogResources\CLCStringReturner.cs" />
+    <Compile Include="LogResources\ConfigurableLogConstructor.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="LogResources\BasicLogConstructor.cs" />
+    <Compile Include="LogResources\LogConstructor.cs" />
+    <Compile Include="LogResources\LogFileWriter.cs" />
+    <Compile Include="LogResources\LogFilter.cs" />
+    <Compile Include="LogResources\LogFilterBase.cs" />
+    <Compile Include="LogResources\LogFilterFactory.cs" />
+    <Compile Include="LogResources\LogFilterID.cs" />
+    <Compile Include="LogResources\LogFilterModule.cs" />
+    <Compile Include="LogResources\LogFilterTerminal.cs" />
+    <Compile Include="LogResources\LogItem.cs" />
+    <Compile Include="LogResources\LogFilterLevel.cs" />
+    <Compile Include="Options.cs" />
+    <Compile Include="DictionaryFacade.cs" />
+    <Compile Include="OptionsResources\OptionsAccess.cs" />
+    <Compile Include="OptionsResources\OptionsAccessFactory.cs" />
+    <Compile Include="OptionsResources\OptionsAccessRegistry.cs" />
+    <Compile Include="OptionsResources\OptionsAccessText.cs" />
+    <Compile Include="OptionsResources\OptionsAccessXml.cs" />
+    <Compile Include="Prototype.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueuedThread.cs" />
+    <Compile Include="tcpServer.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

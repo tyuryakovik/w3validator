@@ -1,0 +1,17 @@
+C:\Dropbox\W3Validity\W3Validity\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Dropbox\W3Validity\W3Validity\obj\x86\Debug\MainWindow.baml
+C:\Dropbox\W3Validity\W3Validity\obj\x86\Debug\MainWindow.g.cs
+C:\Dropbox\W3Validity\W3Validity\obj\x86\Debug\App.g.cs
+C:\Dropbox\W3Validity\W3Validity\obj\x86\Debug\W3Validity_MarkupCompile.cache
+C:\Dropbox\W3Validity\W3Validity\obj\x86\Debug\W3Validity.g.resources
+C:\Dropbox\W3Validity\W3Validity\obj\x86\Debug\W3Validity.Properties.Resources.resources
+C:\Dropbox\W3Validity\W3Validity\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Dropbox\W3Validity\W3Validity\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Dropbox\W3Validity\W3Validity\obj\x86\Debug\W3Validity.exe
+C:\Dropbox\W3Validity\W3Validity\obj\x86\Debug\W3Validity.pdb
+C:\Dropbox\W3Validity\W3Validity\W3Validity.exe
+C:\Dropbox\W3Validity\W3Validity\W3Validity.pdb
+C:\Dropbox\W3Validity\W3Validity\Common.dll
+C:\Dropbox\W3Validity\W3Validity\Common.pdb
+C:\Dropbox\W3Validity\W3Validity\Common.xml
+C:\Dropbox\W3Validity\W3Validity\W3Validity.exe.config

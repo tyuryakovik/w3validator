@@ -1,0 +1,6 @@
+C:\Dropbox\kbproject\common\obj\Release\ResolveAssemblyReference.cache
+C:\Dropbox\kbproject\common\obj\Release\Common.dll
+C:\Dropbox\kbproject\common\obj\Release\Common.pdb
+C:\Dropbox\kbproject\common\Common.dll
+C:\Dropbox\kbproject\common\Common.pdb
+C:\Dropbox\kbproject\common\Common.XML
