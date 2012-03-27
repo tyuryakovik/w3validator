@@ -60,7 +60,7 @@ namespace W3Validity
       }
       catch (Exception ex)
       {
-        Log.Error("HTTP", "Create Request Error", ex);
+        Log.Error(ToString(), "Create Request Error", ex);
       }
     }
 
@@ -89,7 +89,7 @@ namespace W3Validity
       }
      catch (Exception ex)
       {
-        Console.Write(ex.Message);
+        Log.Error(ToString(), "Error getting a responce", ex);
         return false;
       }
       return true;

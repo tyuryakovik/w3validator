@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "W3Validity", "W3Validity\W3Validity.csproj", "{55FAF8A6-9CD0-4B8F-9844-667A1EE78151}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "..\kbproject\common\Common.csproj", "{5ADFB150-5AAD-4A62-A4BE-323ED782962A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "common\Common.csproj", "{5ADFB150-5AAD-4A62-A4BE-323ED782962A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
